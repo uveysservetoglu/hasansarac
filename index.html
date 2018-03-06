@@ -9,20 +9,32 @@
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script>
         $(function () {
-            $(".hs").css({
-               height: $( window ).height()
+            var bodyHeight= $(window).height();
+            var bodyWidth= $(window).width();
+            alert(bodyWidth);
+            document.getElementById('hsBody').style.backgroundSize = 'auto '+bodyHeight+'px';
+            $('.hsBody').css('backgroud-size','auto ', bodyHeight+'px');
+            $(".dropdown").hover(function () {
+                $(this).addClass('show');
+                $(".dropdown-menu").addClass('show');
+            },function () {
+                $(this).removeClass('show');
+                $(".dropdown-menu").removeClass('show');
             });
         });
     </script>
 </head>
-<body>
-    <div class="row hs">
-        <div class="row topHead">
-            <div class="titleSite col-md-2">
-                <div class="title">HASAN SARAÇ</div>
+<body class="hsBody" id="hsBody">
+    <div class="hs">
+        <div class="topHead row">
+            <div class="col-12 col-md-4 logo">
+                <div class="titleSite col-md-10 col-12">
+                    <div class="siteTitle">HASAN SARAÇ</div>
+                    <div class="siteSpot">UFKU DAR OLANIN LAFI KARMAŞIK OLUR</div>
+                </div>
             </div>
-            <div class="menuHeader col-md-8">
-                <div class="col-md-10 container">
+            <div class="menuHeader col-6 col-md-8">
+                <div class="col-md-10  menus">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -64,8 +76,8 @@
                     </nav>
                 </div>
             </div>
-            <div class="locale col-md-2">
-                <div class="lang col-md-8">
+            <div class="locale col-6 col-md-1">
+                <div class="lang col-md-12">
                     ENGILISH
                 </div>
             </div>
