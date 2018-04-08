@@ -21,7 +21,6 @@ body {
     background-position-x: 100%;
     font-family: WoodFoordBold;
 }
-
 .topHead{
     margin: 0;
     margin-top: 35px;
@@ -49,7 +48,6 @@ body {
 .siteTitle{
     font-size: 16pt;
 }
-
 .bg-light{
     background: none !important;
 }
@@ -120,6 +118,7 @@ body {
     clear: both;
 }
 
+
 @media screen and (min-width: 768px)  {
     .titleSite{
         border-top-right-radius: 50px;
@@ -164,11 +163,21 @@ body {
 }
 /*Tablet */
 @media screen and (max-width: 1024px) and (min-width: 768px)  {
+    .contentMan{
+        background: white;
+        opacity: 0.87;
+        padding: 15px;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+        border-radius:15px;
+    }
+    .image-about{
+        opacity: 1;
+    }
     .titleSite{
         width: 100%;
     }
     .siteSpot{
-        font-size: 13px;
+        font-size: 11px;
     }
     .eserler img{
         height: 120px;
@@ -186,6 +195,9 @@ body {
         text-align: center;
         text-transform: uppercase;
         font-size: 8px;
+    }
+    .lang{
+        font-size: 10px;
     }
     .footer{
         bottom: -30px;
